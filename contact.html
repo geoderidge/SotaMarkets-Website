@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SotaMarkets</title>
+    <meta name="description" content="Contact SotaMarkets for a free consultation on our vending and micro-market services.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer base {
+            h1 {
+                @apply text-4xl font-bold;
+            }
+            h2 {
+                @apply text-3xl font-semibold;
+            }
+            h3 {
+                @apply text-2xl font-semibold;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-[#f7f7f7] shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <img class="h-10 w-auto" src="assets/images/SotaMarkets Header.png" alt="SotaMarkets">
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Home</a>
+                    <a href="services.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Services</a>
+                    <a href="areas.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Areas Served</a>
+                    <a href="contact.html" class="text-base font-medium text-white bg-blue-600 px-3 py-2 rounded-md">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-900">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Home</a>
+            <a href="services.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Services</a>
+            <a href="areas.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Areas Served</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm text-white bg-blue-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Title Hero -->
+        <section class="bg-blue-800 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-bold">Get in Touch</h1>
+                <p class="mt-2 text-lg">We'd love to hear from you. Let's discuss how we can improve your breakroom.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+                    <div class="lg:col-span-1">
+                        <div class="bg-white p-8 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-bold">Contact Information</h2>
+                            <div class="mt-6 space-y-4">
+                                <div>
+                                    <h3 class="font-semibold">Phone</h3>
+                                    <p class="text-gray-600">(123) 456-7890</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">Email</h3>
+                                    <p class="text-gray-600">info@sotamarkets.com</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">Service Area</h3>
+                                    <p class="text-gray-600">Apple Valley, Lakeville, Farmington, Burnsville, Rosemount, and Eagan, MN.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 lg:mt-0 lg:col-span-2">
+                        <div class="bg-white p-8 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-bold">Send Us a Message</h2>
+                            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                                <div>
+                                    <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                    <div class="mt-1">
+                                        <input type="text" name="full-name" id="full-name" autocomplete="name" required class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                    <div class="mt-1">
+                                        <input id="email" name="email" type="email" autocomplete="email" required class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md">
+                                    </div>
+                                </div>
+                                 <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                                    <div class="mt-1">
+                                        <input type="tel" name="phone" id="phone" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="location-type" class="block text-sm font-medium text-gray-700">Location Type</label>
+                                    <div class="mt-1">
+                                        <select id="location-type" name="location-type" class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md">
+                                            <option>Office</option>
+                                            <option>Apartment Building</option>
+                                            <option>Manufacturing</option>
+                                            <option>Gym / Fitness Center</option>
+                                            <option>Urgent Care / Hospital</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                    <div class="mt-1">
+                                        <textarea id="message" name="message" rows="4" required class="py-3 px-4 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border border-gray-300 rounded-md"></textarea>
+                                    </div>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                             <p id="form-status" class="mt-4 text-center"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold">SotaMarkets</h3>
+                    <p class="text-gray-400">Your local partner in unattended retail.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold">Contact</h4>
+                        <ul class="mt-4 space-y-2">
+                            <li><p class="text-gray-400">Phone: (123) 456-7890</p></li>
+                            <li><p class="text-gray-400">Email: info@sotamarkets.com</p></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold">Service Area</h4>
+                        <p class="mt-4 text-gray-400">Apple Valley, Lakeville, Farmington, Burnsville, Rosemount, and Eagan, MN.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SotaMarkets LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

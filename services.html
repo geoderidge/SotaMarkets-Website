@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - SotaMarkets</title>
+    <meta name="description" content="Explore the micro-markets, vending machines, and office coffee services offered by SotaMarkets.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer base {
+            h1 {
+                @apply text-4xl font-bold;
+            }
+            h2 {
+                @apply text-3xl font-semibold;
+            }
+            h3 {
+                @apply text-2xl font-semibold;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-[#f7f7f7] shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <img class="h-10 w-auto" src="assets/images/SotaMarkets Header.png" alt="SotaMarkets">
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Home</a>
+                    <a href="services.html" class="text-base font-medium text-white bg-blue-600 px-3 py-2 rounded-md">Services</a>
+                    <a href="areas.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Areas Served</a>
+                    <a href="contact.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-900">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Home</a>
+            <a href="services.html" class="block py-2 px-4 text-sm text-white bg-blue-600">Services</a>
+            <a href="areas.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Areas Served</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Title Hero -->
+        <section class="bg-blue-800 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-bold">Our Services</h1>
+                <p class="mt-2 text-lg">Comprehensive solutions for every breakroom.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Product Showcase -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid gap-12 md:grid-cols-1">
+                    <!-- Micro-Markets -->
+                    <div class="md:flex items-center bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="md:w-1/2 bg-gray-100 flex items-center justify-center">
+                            <svg class="w-full h-full" width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="none">
+                                <rect width="600" height="400" fill="#E5E7EB"></rect>
+                                <g fill="#051b4d">
+                                    <circle cx="300" cy="200" r="50"></circle>
+                                    <rect x="200" y="150" width="200" height="100" fill-opacity="0.1"></rect>
+                                </g>
+                                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24px" fill="#051b4d">Micro-Market</text>
+                            </svg>
+                        </div>
+                        <div class="md:w-1/2 p-8">
+                            <h2 class="text-3xl font-bold">Micro-Markets</h2>
+                            <p class="mt-4 text-gray-600">Transform your breakroom into a self-serve convenience store. Our micro-markets offer a wide variety of fresh foods, snacks, and beverages, available 24/7. Employees can browse, select, and pay for items using a cashless kiosk.</p>
+                            <ul class="mt-4 space-y-2 text-gray-600">
+                                <li>- Freshly prepared sandwiches, salads, and wraps</li>
+                                <li>- Wide selection of healthy snacks and popular brands</li>
+                                <li>- Bean-to-cup coffee and specialty drinks</li>
+                                <li>- Secure, easy-to-use payment system</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Vending Machines -->
+                    <div class="md:flex items-center bg-white rounded-lg shadow-lg overflow-hidden">
+                         <div class="md:w-1/2 p-8">
+                            <h2 class="text-3xl font-bold">Modern Vending</h2>
+                            <p class="mt-4 text-gray-600">Forget the clunky, unreliable vending machines of the past. We provide state-of-the-art machines that are always stocked, clean, and ready to serve. Our smart vending technology accepts multiple payment forms, including mobile pay.</p>
+                            <ul class="mt-4 space-y-2 text-gray-600">
+                                <li>- Healthy and traditional snack & drink options</li>
+                                <li>- Credit/debit and mobile payment enabled</li>
+                                <li>- Real-time inventory monitoring ensures products are always in stock</li>
+                                <li>- Energy-efficient and ADA compliant</li>
+                            </ul>
+                        </div>
+                        <div class="md:w-1/2 bg-gray-100 flex items-center justify-center">
+                            <svg class="w-full h-full" width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="none">
+                                <rect width="600" height="400" fill="#E5E7EB"></rect>
+                                <g fill="#051b4d">
+                                    <rect x="250" y="150" width="100" height="100" rx="15"></rect>
+                                    <rect x="225" y="125" width="150" height="150" fill-opacity="0.1" rx="15"></rect>
+                                </g>
+                                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24px" fill="#051b4d">Modern Vending</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Office Coffee -->
+                    <div class="md:flex items-center bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="md:w-1/2 bg-gray-100 flex items-center justify-center">
+                            <svg class="w-full h-full" width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="none">
+                                <rect width="600" height="400" fill="#E5E7EB"></rect>
+                                <g fill="#051b4d">
+                                    <path d="M250 250 L350 250 L300 150 Z"></path>
+                                    <path d="M225 275 L375 275 L300 125 Z" fill-opacity="0.1"></path>
+                                </g>
+                                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24px" fill="#051b4d">Office Coffee</text>
+                            </svg>
+                        </div>
+                        <div class="md:w-1/2 p-8">
+                            <h2 class="text-3xl font-bold">Office Coffee & Pantry</h2>
+                            <p class="mt-4 text-gray-600">Elevate your office coffee experience. We offer everything from single-cup brewers to bean-to-cup machines, along with a full suite of pantry supplies. Keep your team fueled and focused with premium coffee, teas, creamers, and snacks.</p>
+                            <ul class="mt-4 space-y-2 text-gray-600">
+                                <li>- Gourmet local and national coffee brands</li>
+                                <li>- Full-service stocking of creamers, sugars, cups, and more</li>
+                                <li>- Water filtration systems</li>
+                                <li>- Pantry service for snacks, fruit, and other breakroom needs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-gray-100 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2>Find Your Perfect Fit</h2>
+                <p class="mt-2 text-lg text-gray-600">Contact us today for a free, no-obligation consultation.</p>
+                <a href="contact.html" class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Get Started</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold">SotaMarkets</h3>
+                    <p class="text-gray-400">Your local partner in unattended retail.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold">Contact</h4>
+                        <ul class="mt-4 space-y-2">
+                            <li><p class="text-gray-400">Phone: (123) 456-7890</p></li>
+                            <li><p class="text-gray-400">Email: info@sotamarkets.com</p></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold">Service Area</h4>
+                        <p class="mt-4 text-gray-400">Apple Valley, Lakeville, Farmington, Burnsville, Rosemount, and Eagan, MN.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SotaMarkets LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

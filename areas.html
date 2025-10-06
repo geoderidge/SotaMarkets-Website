@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas We Serve - SotaMarkets</title>
+    <meta name="description" content="SotaMarkets provides vending and micro-market services to businesses in Apple Valley, Lakeville, Farmington, Burnsville, Rosemount, and Eagan.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer base {
+            h1 {
+                @apply text-4xl font-bold;
+            }
+            h2 {
+                @apply text-3xl font-semibold;
+            }
+            h3 {
+                @apply text-2xl font-semibold;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-[#f7f7f7] shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <img class="h-10 w-auto" src="assets/images/SotaMarkets Header.png" alt="SotaMarkets">
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Home</a>
+                    <a href="services.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Services</a>
+                    <a href="areas.html" class="text-base font-medium text-white bg-blue-600 px-3 py-2 rounded-md">Areas Served</a>
+                    <a href="contact.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-900">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Home</a>
+            <a href="services.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Services</a>
+            <a href="areas.html" class="block py-2 px-4 text-sm text-white bg-blue-600">Areas Served</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Title Hero -->
+        <section class="bg-blue-800 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl font-bold">Our Service Area</h1>
+                <p class="mt-2 text-lg">Proudly serving the southern Twin Cities metro area.</p>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-semibold">Minnesota's South Metro</h2>
+                    <p class="mt-2 text-lg text-gray-600">We focus on providing timely, dedicated service to our neighbors in the following cities:</p>
+                </div>
+                <div class="mt-8 max-w-2xl mx-auto">
+                    <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+                        <li class="bg-white p-4 rounded-md shadow-sm font-semibold">Apple Valley</li>
+                        <li class="bg-white p-4 rounded-md shadow-sm font-semibold">Lakeville</li>
+                        <li class="bg-white p-4 rounded-md shadow-sm font-semibold">Farmington</li>
+                        <li class="bg-white p-4 rounded-md shadow-sm font-semibold">Burnsville</li>
+                        <li class="bg-white p-4 rounded-md shadow-sm font-semibold">Rosemount</li>
+                        <li class="bg-white p-4 rounded-md shadow-sm font-semibold">Eagan</li>
+                    </ul>
+                </div>
+                 <div class="text-center mt-8">
+                     <p class="text-md text-gray-500">Don't see your city? Contact us to see if we can serve your location.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Types Section -->
+        <section class="bg-gray-100 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-semibold">Ideal for Any High-Traffic Venue</h2>
+                    <p class="mt-2 text-lg text-gray-600">Our solutions are a perfect fit for a variety of businesses, including:</p>
+                </div>
+                <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex justify-center items-center h-24">
+                            <svg class="w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <rect width="100" height="100" fill="#E5E7EB"></rect>
+                                <g fill="#051b4d">
+                                    <rect x="25" y="40" width="50" height="20" rx="5"></rect>
+                                    <rect x="35" y="30" width="30" height="40" rx="5"></rect>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4">Apartment & Condo Buildings</h3>
+                        <p class="mt-2 text-gray-600">Offer a convenient amenity for residents, available 24/7.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex justify-center items-center h-24">
+                            <svg class="w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <rect width="100" height="100" fill="#E5E7EB"></rect>
+                                <g fill="#051b4d">
+                                    <path d="M20 80 L80 80 L80 40 L50 20 L20 40 Z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4">Manufacturing Facilities</h3>
+                        <p class="mt-2 text-gray-600">Keep all shifts energized and productive with on-site food and drink.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex justify-center items-center h-24">
+                            <svg class="w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <rect width="100" height="100" fill="#E5E7EB"></rect>
+                                <g fill="#051b4d">
+                                    <path d="M50 20 L60 45 L85 45 L65 60 L75 85 L50 70 L25 85 L35 60 L15 45 L40 45 Z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4">Gyms & Fitness Centers</h3>
+                        <p class="mt-2 text-gray-600">Provide healthy snacks and drinks for pre- and post-workout fuel.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex justify-center items-center h-24">
+                            <svg class="w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <rect width="100" height="100" fill="#E5E7EB"></rect>
+                                <g fill="#051b4d">
+                                    <rect x="20" y="30" width="60" height="40" rx="5"></rect>
+                                    <rect x="30" y="20" width="40" height="60" rx="5"></rect>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4">Offices & Corporate Parks</h3>
+                        <p class="mt-2 text-gray-600">Boost morale and reduce time spent on off-site lunch runs.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex justify-center items-center h-24">
+                            <svg class="w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <rect width="100" height="100" fill="#E5E7EB"></rect>
+                                <g fill="#051b4d">
+                                    <path d="M50 20 L50 80 M20 50 L80 50"></path>
+                                    <rect x="20" y="20" width="60" height="60" rx="10" stroke="#051b4d" stroke-width="5" fill="none"></rect>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4">Urgent Care & Hospitals</h3>
+                        <p class="mt-2 text-gray-600">Offer convenient options for staff and visitors during long hours.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex justify-center items-center h-24">
+                            <svg class="w-20 h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <rect width="100" height="100" fill="#E5E7EB"></rect>
+                                <g fill="#051b4d">
+                                    <circle cx="50" cy="50" r="10"></circle>
+                                    <circle cx="30" cy="30" r="5"></circle>
+                                    <circle cx="70" cy="30" r="5"></circle>
+                                    <circle cx="30" cy="70" r="5"></circle>
+                                    <circle cx="70" cy="70" r="5"></circle>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4">And More...</h3>
+                        <p class="mt-2 text-gray-600">If you have a high-traffic breakroom, we have a solution for you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2>Serve Your Community</h2>
+                <p class="mt-2 text-lg text-gray-600">Partner with a local company dedicated to quality service.</p>
+                <a href="contact.html" class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Inquire Today</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold">SotaMarkets</h3>
+                    <p class="text-gray-400">Your local partner in unattended retail.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold">Contact</h4>
+                        <ul class="mt-4 space-y-2">
+                            <li><p class="text-gray-400">Phone: (123) 456-7890</p></li>
+                            <li><p class="text-gray-400">Email: info@sotamarkets.com</p></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold">Service Area</h4>
+                        <p class="mt-4 text-gray-400">Apple Valley, Lakeville, Farmington, Burnsville, Rosemount, and Eagan, MN.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SotaMarkets LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
