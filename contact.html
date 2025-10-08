@@ -6,6 +6,24 @@
     <title>Contact Us - SotaMarkets</title>
     <meta name="description" content="Contact SotaMarkets for a free consultation on our vending and micro-market services.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': '#051B4D',
+                        'brand-secondary': '#065F96',
+                        'brand-grey': '#f7f7f7',
+                        'brand-green': '#81A78F',
+                        'brand-gold': '#CFB474',
+                        'brand-tan': '#FAF0DA',
+                        'brand-blue': '#2563eb',
+                        'brand-blue-hover': '#1d4ed8',
+                    }
+                }
+            }
+        }
+    </script>
     <style type="text/tailwindcss">
         @layer base {
             h1 {
@@ -22,7 +40,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
     <!-- Header -->
-    <header class="bg-[#f7f7f7] shadow-md sticky top-0 z-50">
+    <header class="bg-brand-grey shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex-shrink-0">
@@ -34,7 +52,7 @@
                     <a href="index.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Home</a>
                     <a href="services.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Services</a>
                     <a href="areas.html" class="text-base font-medium text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md">Areas Served</a>
-                    <a href="contact.html" class="text-base font-medium text-white bg-blue-600 px-3 py-2 rounded-md">Contact</a>
+                    <a href="contact.html" class="text-base font-medium text-white bg-brand-primary px-3 py-2 rounded-md">Contact</a>
                 </nav>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-900">
@@ -50,22 +68,22 @@
             <a href="index.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Home</a>
             <a href="services.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Services</a>
             <a href="areas.html" class="block py-2 px-4 text-sm text-gray-500 hover:bg-gray-100">Areas Served</a>
-            <a href="contact.html" class="block py-2 px-4 text-sm text-white bg-blue-600">Contact</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm text-white bg-brand-primary">Contact</a>
         </div>
     </header>
 
     <!-- Main Content -->
     <main>
         <!-- Page Title Hero -->
-        <section class="bg-blue-800 text-white py-12">
+        <section class="bg-brand-green text-white py-12">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h1 class="text-4xl font-bold">Get in Touch</h1>
-                <p class="mt-2 text-lg">We'd love to hear from you. Let's discuss how we can improve your breakroom.</p>
+                <p class="mt-2 text-lg">We'd love to hear from you. Let's discuss how we can improve your amenities.</p>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <form action="https://formspree.io/f/mkgqzqdw" method="POST" class="py-16">
+        <div class="py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:grid lg:grid-cols-3 lg:gap-8">
                     <div class="lg:col-span-1">
@@ -90,7 +108,7 @@
                     <div class="mt-12 lg:mt-0 lg:col-span-2">
                         <div class="bg-white p-8 rounded-lg shadow-md">
                             <h2 class="text-2xl font-bold">Send Us a Message</h2>
-                            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                            <form action="https://formspree.io/f/mkgqzqdw" method="POST" id="contact-form" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                                 <div>
                                     <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
                                     <div class="mt-1">
@@ -129,7 +147,7 @@
                                     </div>
                                 </div>
                                 <div class="sm:col-span-2">
-                                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-brand-secondary hover:bg-brand-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                                         Submit
                                     </button>
                                 </div>
@@ -139,11 +157,11 @@
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white">
+    <footer class="bg-brand-primary text-white">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="mb-8 md:mb-0">
